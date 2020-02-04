@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_max_big">20sp</dimen>
+    <dimen name="text_size_big">15sp</dimen>
+    <dimen name="text_size_medium">13sp</dimen>
+    <dimen name="text_size_small">11sp</dimen>
+
+
+    <dimen name="table_title">20sp</dimen>
+    <dimen name="table_copy_title">13sp</dimen>
+    <dimen name="table_content">10sp</dimen>
+
+    <dimen name="table_padding">1dp</dimen>
+
+</resources>

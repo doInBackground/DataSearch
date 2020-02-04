@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context="com.wei.datasearch.activity.GridLayoutActivity">
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="表名"
+        android:textColor="#292929"
+        android:textSize="@dimen/table_title"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_table_name"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="地址:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="电话:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+        <TextView
+            android:id="@+id/tv_fax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="传真:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<View-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="left"-->
+    <!--android:text="地址:"-->
+    <!--android:textColor="#292929"-->
+    <!--android:textSize="@dimen/table_copy_title"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="left"-->
+    <!--android:text="电话:"-->
+    <!--android:textColor="#292929"-->
+    <!--android:textSize="@dimen/table_copy_title"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="left"-->
+    <!--android:text="传真:"-->
+    <!--android:textColor="#292929"-->
+    <!--android:textSize="@dimen/table_copy_title"/>-->
+
+    <!--<View-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="销售订单号:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+        <TextView
+            android:id="@+id/tv_customer_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="客户名称:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+        <TextView
+            android:id="@+id/tv_make_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="订货日期:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+        <TextView
+            android:id="@+id/tv_end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="交货日期:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="工程名称:"
+            android:textColor="#292929"
+            android:textSize="@dimen/table_copy_title"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:paddingBottom="@dimen/table_padding"
+            android:paddingTop="@dimen/table_padding"
+            android:text="制单人"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+        <TextView
+            android:id="@+id/tv_make_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:text="审核人"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+        <TextView
+            android:id="@+id/tv_audit_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:text="批准人"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+        <TextView
+            android:id="@+id/tv_approve_person"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:paddingBottom="@dimen/table_padding"
+            android:paddingTop="@dimen/table_padding"
+            android:text="备注"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+        <TextView
+            android:id="@+id/tv_remarks"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:background="@drawable/shape_stroke_rectangle_black"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/table_content"/>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_3"
+        android:layout_below="@id/ll_2"/>
+
+
+    <TextView
+        android:id="@+id/tv_set_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#999"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="修改表格信息"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_big"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
